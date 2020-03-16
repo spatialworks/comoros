@@ -1,0 +1,106 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE,
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# comoros: Datasets for use in designing surveys in the Comoros Union
+
+<!-- badges: start -->
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![Travis build status](https://travis-ci.org/spatialworks/comoros.svg?branch=master)](https://travis-ci.org/spatialworks/comoros)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/spatialworks/comoros?branch=master&svg=true)](https://ci.appveyor.com/project/spatialworks/comoros)
+<!-- badges: end -->
+
+Designing surveys require relevant datasets to be used as basis for sample size calculations, sampling design, survey planning/logistics and survey implementation. These include datasets on population, lists of sampling clusters, map datasets for spatial sampling, and previous survey datasets that can be used for estimating indicator variance and design effects. This package contains relevant datasets for use in designing surveys in the Comoros Union.
+
+## Installation
+
+The `comoros` package is not yet released on [CRAN](https://CRAN.R-project.org). The development version of the package can be installed from [GitHub](https://github.com/) with:
+
+```{r install, echo = TRUE, eval = TRUE}
+if(!require(remotes)) install.packages("remotes")
+remotes::install_github("spatialworks/comoros")
+```
+
+## Usage
+
+When installing `comoros`, geospatial packages on which `comoros` depends on are also installed. To use `comoros` package, it will be important to load these package dependencies that have been installed. This can be done by:
+
+```{r depend, echo = TRUE, eval = TRUE}
+library(rgdal)
+library(rgeos)
+library(raster)
+```
+
+### Country borders
+
+The Comoros country borders `SpatialPolygonsDataFrame` is accessed via the `country` dataset.
+
+```{r country1, echo = TRUE, eval = TRUE}
+comoros::country
+```
+
+The country borders of the Comoros can be plotted by:
+
+```{r country2, echo = TRUE, eval = TRUE}
+sp::plot(comoros::country)
+```
+
+### Prefecture borders
+
+The Comoros prefecture borders `SpatialPolygonsDataFrame` is accessed via the `prefecture` dataset.
+
+```{r prefecture1, echo = TRUE, eval = TRUE}
+comoros::prefecture
+```
+
+The prefecture borders of the Comoros can be plotted by:
+
+```{r prefecture2, echo = TRUE, eval = TRUE}
+sp::plot(comoros::prefecture)
+```
+
+### Commune borders
+
+The Comoros commune borders `SpatialPolygonsDataFrame` is accessed via the `commune` dataset.
+
+```{r commune1, echo = TRUE, eval = TRUE}
+comoros::commune
+```
+
+The commune borders of the Comoros can be plotted by:
+
+```{r commune2, echo = TRUE, eval = TRUE}
+sp::plot(comoros::commune)
+```
+
+### Populated places
+
+Populated places in the Comoros can be accessed via the `ppl` dataset which is in a `SpatialPointsDataFrame` format.
+
+```{r ppl1, echo = TRUE, eval = TRUE}
+comoros::ppl
+```
+
+The populated places dataset can be laid over the country borders as follows:
+
+```{r ppl2, echo = TRUE, eval = TRUE}
+sp::plot(comoros::commune, lwd = 0.5, border = "gray50")
+sp::plot(comoros::prefecture, add = TRUE)
+sp::plot(comoros::country, lwd = 2, add = TRUE)
+sp::plot(comoros::ppl, cex = 0.3, pch = 20, col = "darkgreen", add = TRUE)
+```
+
