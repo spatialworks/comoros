@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# comoros: Datasets for use in designing surveys in the Comoros Union
+# comoros: Datasets for use in designing surveys in the Comoros Union <img src="https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CN-flag.gif" width="200px" align="right" />
 
 <!-- badges: start -->
 

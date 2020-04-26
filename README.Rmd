@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# comoros: Datasets for use in designing surveys in the Comoros Union
+# comoros: Datasets for use in designing surveys in the Comoros Union <img src="https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CN-flag.gif" width="200px" align="right" /> 
 
 <!-- badges: start -->
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
