@@ -4,7 +4,8 @@
 \name{commune}
 \alias{commune}
 \title{Administrative level boundary 3 (commune borders) for Comoros Union}
-\format{A SpatialPolygonsDataFrame with 55 features:
+\format{
+A SpatialPolygonsDataFrame with 55 features:
 \describe{
   \item{\code{Shape_Leng}}{Shape length}
   \item{\code{Shape_Area}}{Shape area}
@@ -22,7 +23,8 @@
   \item{\code{date}}{Date produced}
   \item{\code{validOn}}{Date map is valid from}
   \item{\code{validTo}}{Date map is valid to}
-}}
+}
+}
 \source{
 \url{https://data.humdata.org/dataset/comoros-administrative-level-0-3-boundaries}
 }

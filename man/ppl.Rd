@@ -4,7 +4,8 @@
 \name{ppl}
 \alias{ppl}
 \title{Populated places (points) map for Comoros Union}
-\format{A SpatialPointsDataFrame with 144 features:
+\format{
+A SpatialPointsDataFrame with 144 features:
 \describe{
   \item{\code{osm_id}}{Open Street Map identifier}
   \item{\code{is_in}}{Where is this place located?}
@@ -12,7 +13,8 @@
   \item{\code{place}}{Type of populated place}
   \item{\code{population}}{Population number}
   \item{\code{name}}{Name of populated place}
-}}
+}
+}
 \source{
 \url{https://data.humdata.org/dataset/hotosm_com_populated_places}
 }

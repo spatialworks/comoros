@@ -4,7 +4,8 @@
 \name{prefecture}
 \alias{prefecture}
 \title{Administrative level boundary 2 (prefecture borders) for Comoros Union}
-\format{A SpatialPolygonsDataFrame with 17 features:
+\format{
+A SpatialPolygonsDataFrame with 17 features:
 \describe{
   \item{\code{Shape_Leng}}{Shape length}
   \item{\code{Shape_Area}}{Shape area}
@@ -20,7 +21,8 @@
   \item{\code{date}}{Date produced}
   \item{\code{validOn}}{Date map is valid from}
   \item{\code{validTo}}{Date map is valid to}
-}}
+}
+}
 \source{
 \url{https://data.humdata.org/dataset/comoros-administrative-level-0-3-boundaries}
 }
