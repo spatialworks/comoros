@@ -22,7 +22,8 @@ Designing surveys require relevant datasets to be used as basis for
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/spatialworks/comoros,https://spatialworks.io/comoros}
+  \item \url{https://github.com/spatialworks/comoros}
+  \item \url{https://spatialworks.io/comoros/}
   \item Report bugs at \url{https://github.com/spatialworks/comoros/issues}
 }
 
