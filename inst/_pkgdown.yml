@@ -1,5 +1,7 @@
 title: comoros
+
 url: https://spatialworks.io/comoros
+
 template:
   params:
     bootswatch: sandstone
@@ -22,6 +24,7 @@ reference:
 - title: Datasets
   contents:
   - country
+  - island
   - prefecture
   - commune
   - ppl
