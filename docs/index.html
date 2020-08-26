@@ -71,9 +71,9 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="comoros-datasets-for-use-in-designing-surveys-in-the-comoros-union" class="section level1">
+<div id="comoros-datasets-for-use-in-designing-surveys-in-the-comoros-union-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#comoros-datasets-for-use-in-designing-surveys-in-the-comoros-union" class="anchor"></a>comoros: Datasets for use in designing surveys in the Comoros Union <img src="https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CN-flag.gif" width="200px" align="right">
+<a href="#comoros-datasets-for-use-in-designing-surveys-in-the-comoros-union-" class="anchor"></a>comoros: Datasets for use in designing surveys in the Comoros Union <img src="https://www.cia.gov/library/publications/the-world-factbook/attachments/flags/CN-flag.gif" width="200px" align="right">
 </h1></div>
 <!-- badges: start -->
 
@@ -106,13 +106,30 @@
 <span class="co">#&gt; value       : 4.80449064527, 0.137199933487, Comoros (the),         KM,       NA,         NA,         NA, 2018/12/28, 2019/12/05,      NA</span></pre></div>
 <p>The country borders of the Comoros can be plotted by:</p>
 <div class="sourceCode" id="cb4"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/country.html">country</a></span>)</pre></div>
-<p><img src="reference/figures/README-country2-1.png" width="100%"></p>
+<p><img src="reference/figures/README-country2-1.png" width="100%" style="display: block; margin: auto;"></p>
+</div>
+<div id="island-borders" class="section level3">
+<h3 class="hasAnchor">
+<a href="#island-borders" class="anchor"></a>Island borders</h3>
+<p>The Comoros island borders <code>SpatialPolygonsDataFrame</code> is accessed via the <code>island</code> dataset.</p>
+<div class="sourceCode" id="cb5"><pre class="r"><span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/island.html">island</a></span>
+<span class="co">#&gt; class       : SpatialPolygonsDataFrame </span>
+<span class="co">#&gt; features    : 3 </span>
+<span class="co">#&gt; extent      : 43.22856, 44.54067, -12.42278, -11.36528  (xmin, xmax, ymin, ymax)</span>
+<span class="co">#&gt; crs         : +proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0 </span>
+<span class="co">#&gt; variables   : 12</span>
+<span class="co">#&gt; names       :    Shape_Leng,      Shape_Area,            ADM1_EN, ADM1_PCODE,       ADM1_REF, ADM1ALT1EN, ADM1ALT2EN,       ADM0_EN, ADM0_PCODE,       date,    validOn, validTo </span>
+<span class="co">#&gt; min values  : 1.36498298028, 0.0174328080224, Anjouan (Ndzouani),        KM1, Moheli (Mwali),         NA,         NA, Comoros (the),         KM, 2018/12/28, 2019/12/05,      NA </span>
+<span class="co">#&gt; max values  : 2.07398441062, 0.0842847607715,     Moheli (Mwali),        KM3, Moheli (Mwali),         NA,         NA, Comoros (the),         KM, 2018/12/28, 2019/12/05,      NA</span></pre></div>
+<p>The island borders of the Comoros can be plotted by:</p>
+<div class="sourceCode" id="cb6"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/island.html">island</a></span>)</pre></div>
+<p><img src="reference/figures/README-island2-1.png" width="100%" style="display: block; margin: auto;"></p>
 </div>
 <div id="prefecture-borders" class="section level3">
 <h3 class="hasAnchor">
 <a href="#prefecture-borders" class="anchor"></a>Prefecture borders</h3>
 <p>The Comoros prefecture borders <code>SpatialPolygonsDataFrame</code> is accessed via the <code>prefecture</code> dataset.</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/prefecture.html">prefecture</a></span>
+<div class="sourceCode" id="cb7"><pre class="r"><span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/prefecture.html">prefecture</a></span>
 <span class="co">#&gt; class       : SpatialPolygonsDataFrame </span>
 <span class="co">#&gt; features    : 17 </span>
 <span class="co">#&gt; extent      : 43.22856, 44.54067, -12.42278, -11.36528  (xmin, xmax, ymin, ymax)</span>
@@ -122,14 +139,14 @@
 <span class="co">#&gt; min values  : 0.0966248392692, 0.0004527146025,  Djando,       KM11, Mitsamiouli-Mboude,         NA,         NA, Anjouan (Ndzouani),        KM1, Comoros (the),         KM, 2018/12/28, 2019/12/05,      NA </span>
 <span class="co">#&gt; max values  :   1.00539489321,  0.014594533592,    Sima,       KM33,            Mremani,         NA,         NA,     Moheli (Mwali),        KM3, Comoros (the),         KM, 2018/12/28, 2019/12/05,      NA</span></pre></div>
 <p>The prefecture borders of the Comoros can be plotted by:</p>
-<div class="sourceCode" id="cb6"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/prefecture.html">prefecture</a></span>)</pre></div>
-<p><img src="reference/figures/README-prefecture2-1.png" width="100%"></p>
+<div class="sourceCode" id="cb8"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/prefecture.html">prefecture</a></span>)</pre></div>
+<p><img src="reference/figures/README-prefecture2-1.png" width="100%" style="display: block; margin: auto;"></p>
 </div>
 <div id="commune-borders" class="section level3">
 <h3 class="hasAnchor">
 <a href="#commune-borders" class="anchor"></a>Commune borders</h3>
 <p>The Comoros commune borders <code>SpatialPolygonsDataFrame</code> is accessed via the <code>commune</code> dataset.</p>
-<div class="sourceCode" id="cb7"><pre class="r"><span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/commune.html">commune</a></span>
+<div class="sourceCode" id="cb9"><pre class="r"><span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/commune.html">commune</a></span>
 <span class="co">#&gt; class       : SpatialPolygonsDataFrame </span>
 <span class="co">#&gt; features    : 55 </span>
 <span class="co">#&gt; extent      : 43.22856, 44.54067, -12.42278, -11.36528  (xmin, xmax, ymin, ymax)</span>
@@ -139,14 +156,14 @@
 <span class="co">#&gt; min values  : 0.0966248392692, 0.000442750529473,    Adda,      KM111, Cembenoi Lac Sale,         NA,         NA,  Djando,       KM11, Anjouan (Ndzouani),        KM1, Comoros (the),         KM, 2018/12/28, 2019/12/05, ... </span>
 <span class="co">#&gt; max values  :  0.758187096198,  0.00602115613753,  Vouani,      KM332,         Ngandzale,         NA,         NA,    Sima,       KM33,     Moheli (Mwali),        KM3, Comoros (the),         KM, 2018/12/28, 2019/12/05, ...</span></pre></div>
 <p>The commune borders of the Comoros can be plotted by:</p>
-<div class="sourceCode" id="cb8"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/commune.html">commune</a></span>)</pre></div>
-<p><img src="reference/figures/README-commune2-1.png" width="100%"></p>
+<div class="sourceCode" id="cb10"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/commune.html">commune</a></span>)</pre></div>
+<p><img src="reference/figures/README-commune2-1.png" width="100%" style="display: block; margin: auto;"></p>
 </div>
 <div id="populated-places" class="section level3">
 <h3 class="hasAnchor">
 <a href="#populated-places" class="anchor"></a>Populated places</h3>
 <p>Populated places in the Comoros can be accessed via the <code>ppl</code> dataset which is in a <code>SpatialPointsDataFrame</code> format.</p>
-<div class="sourceCode" id="cb9"><pre class="r"><span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/ppl.html">ppl</a></span>
+<div class="sourceCode" id="cb11"><pre class="r"><span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/ppl.html">ppl</a></span>
 <span class="co">#&gt; class       : SpatialPointsDataFrame </span>
 <span class="co">#&gt; features    : 144 </span>
 <span class="co">#&gt; extent      : 43.23215, 44.52885, -12.37829, -11.37155  (xmin, xmax, ymin, ymax)</span>
@@ -156,11 +173,11 @@
 <span class="co">#&gt; min values  :  339324562,           Anjouan,             #opendri-comoros,    city, 1000 a 3000, Akibani أكيباني </span>
 <span class="co">#&gt; max values  : 7228442367, Moya;Sima;Anjouan, US NGA Pub. 112. 2010-11-10., village,        8000,   واناني Wanani</span></pre></div>
 <p>The populated places dataset can be laid over the country borders as follows:</p>
-<div class="sourceCode" id="cb10"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/commune.html">commune</a></span>, <span class="kw">lwd</span> <span class="kw">=</span> <span class="fl">0.5</span>, <span class="kw">border</span> <span class="kw">=</span> <span class="st">"gray50"</span>)
+<div class="sourceCode" id="cb12"><pre class="r"><span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/commune.html">commune</a></span>, <span class="kw">lwd</span> <span class="kw">=</span> <span class="fl">0.5</span>, <span class="kw">border</span> <span class="kw">=</span> <span class="st">"gray50"</span>)
 <span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/prefecture.html">prefecture</a></span>, <span class="kw">add</span> <span class="kw">=</span> <span class="fl">TRUE</span>)
 <span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/country.html">country</a></span>, <span class="kw">lwd</span> <span class="kw">=</span> <span class="fl">2</span>, <span class="kw">add</span> <span class="kw">=</span> <span class="fl">TRUE</span>)
 <span class="kw pkg">sp</span><span class="kw ns">::</span><span class="fu">plot</span>(<span class="kw pkg">comoros</span><span class="kw ns">::</span><span class="no"><a href="reference/ppl.html">ppl</a></span>, <span class="kw">cex</span> <span class="kw">=</span> <span class="fl">0.3</span>, <span class="kw">pch</span> <span class="kw">=</span> <span class="fl">20</span>, <span class="kw">col</span> <span class="kw">=</span> <span class="st">"darkgreen"</span>, <span class="kw">add</span> <span class="kw">=</span> <span class="fl">TRUE</span>)</pre></div>
-<p><img src="reference/figures/README-ppl2-1.png" width="100%"></p>
+<p><img src="reference/figures/README-ppl2-1.png" width="100%" style="display: block; margin: auto;"></p>
 </div>
 </div>
 </div>
@@ -196,6 +213,7 @@
 <li><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle: maturing"></a></li>
 <li><a href="https://travis-ci.org/spatialworks/comoros"><img src="https://travis-ci.org/spatialworks/comoros.svg?branch=master" alt="Travis build status"></a></li>
 <li><a href="https://ci.appveyor.com/project/spatialworks/comoros"><img src="https://ci.appveyor.com/api/projects/status/github/spatialworks/comoros?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
+<li><a href="https://www.codefactor.io/repository/github/spatialworks/comoros"><img src="https://www.codefactor.io/repository/github/spatialworks/comoros/badge" alt="CodeFactor"></a></li>
 </ul>
 </div>
 </div>
