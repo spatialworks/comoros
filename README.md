@@ -11,6 +11,7 @@ maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www
 status](https://travis-ci.org/spatialworks/comoros.svg?branch=master)](https://travis-ci.org/spatialworks/comoros)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/spatialworks/comoros?branch=master&svg=true)](https://ci.appveyor.com/project/spatialworks/comoros)
+[![CodeFactor](https://www.codefactor.io/repository/github/spatialworks/comoros/badge)](https://www.codefactor.io/repository/github/spatialworks/comoros)
 <!-- badges: end -->
 
 Designing surveys require relevant datasets to be used as basis for
@@ -67,7 +68,32 @@ The country borders of the Comoros can be plotted by:
 sp::plot(comoros::country)
 ```
 
-<img src="man/figures/README-country2-1.png" width="100%" />
+<img src="man/figures/README-country2-1.png" width="100%" style="display: block; margin: auto;" />
+
+### Island borders
+
+The Comoros island borders `SpatialPolygonsDataFrame` is accessed via
+the `island` dataset.
+
+``` r
+comoros::island
+#> class       : SpatialPolygonsDataFrame 
+#> features    : 3 
+#> extent      : 43.22856, 44.54067, -12.42278, -11.36528  (xmin, xmax, ymin, ymax)
+#> crs         : +proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0 
+#> variables   : 12
+#> names       :    Shape_Leng,      Shape_Area,            ADM1_EN, ADM1_PCODE,       ADM1_REF, ADM1ALT1EN, ADM1ALT2EN,       ADM0_EN, ADM0_PCODE,       date,    validOn, validTo 
+#> min values  : 1.36498298028, 0.0174328080224, Anjouan (Ndzouani),        KM1, Moheli (Mwali),         NA,         NA, Comoros (the),         KM, 2018/12/28, 2019/12/05,      NA 
+#> max values  : 2.07398441062, 0.0842847607715,     Moheli (Mwali),        KM3, Moheli (Mwali),         NA,         NA, Comoros (the),         KM, 2018/12/28, 2019/12/05,      NA
+```
+
+The island borders of the Comoros can be plotted by:
+
+``` r
+sp::plot(comoros::island)
+```
+
+<img src="man/figures/README-island2-1.png" width="100%" style="display: block; margin: auto;" />
 
 ### Prefecture borders
 
@@ -92,7 +118,7 @@ The prefecture borders of the Comoros can be plotted by:
 sp::plot(comoros::prefecture)
 ```
 
-<img src="man/figures/README-prefecture2-1.png" width="100%" />
+<img src="man/figures/README-prefecture2-1.png" width="100%" style="display: block; margin: auto;" />
 
 ### Commune borders
 
@@ -117,7 +143,7 @@ The commune borders of the Comoros can be plotted by:
 sp::plot(comoros::commune)
 ```
 
-<img src="man/figures/README-commune2-1.png" width="100%" />
+<img src="man/figures/README-commune2-1.png" width="100%" style="display: block; margin: auto;" />
 
 ### Populated places
 
@@ -146,4 +172,4 @@ sp::plot(comoros::country, lwd = 2, add = TRUE)
 sp::plot(comoros::ppl, cex = 0.3, pch = 20, col = "darkgreen", add = TRUE)
 ```
 
-<img src="man/figures/README-ppl2-1.png" width="100%" />
+<img src="man/figures/README-ppl2-1.png" width="100%" style="display: block; margin: auto;" />

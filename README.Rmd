@@ -22,6 +22,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build status](https://travis-ci.org/spatialworks/comoros.svg?branch=master)](https://travis-ci.org/spatialworks/comoros)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/spatialworks/comoros?branch=master&svg=true)](https://ci.appveyor.com/project/spatialworks/comoros)
+[![CodeFactor](https://www.codefactor.io/repository/github/spatialworks/comoros/badge)](https://www.codefactor.io/repository/github/spatialworks/comoros)
 <!-- badges: end -->
 
 Designing surveys require relevant datasets to be used as basis for sample size calculations, sampling design, survey planning/logistics and survey implementation. These include datasets on population, lists of sampling clusters, map datasets for spatial sampling, and previous survey datasets that can be used for estimating indicator variance and design effects. This package contains relevant datasets for use in designing surveys in the Comoros Union.
@@ -55,8 +56,22 @@ comoros::country
 
 The country borders of the Comoros can be plotted by:
 
-```{r country2, echo = TRUE, eval = TRUE}
+```{r country2, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
 sp::plot(comoros::country)
+```
+
+### Island borders
+
+The Comoros island borders `SpatialPolygonsDataFrame` is accessed via the `island` dataset.
+
+```{r island1, echo = TRUE, eval = TRUE}
+comoros::island
+```
+
+The island borders of the Comoros can be plotted by:
+
+```{r island2, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
+sp::plot(comoros::island)
 ```
 
 ### Prefecture borders
@@ -69,7 +84,7 @@ comoros::prefecture
 
 The prefecture borders of the Comoros can be plotted by:
 
-```{r prefecture2, echo = TRUE, eval = TRUE}
+```{r prefecture2, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
 sp::plot(comoros::prefecture)
 ```
 
@@ -83,7 +98,7 @@ comoros::commune
 
 The commune borders of the Comoros can be plotted by:
 
-```{r commune2, echo = TRUE, eval = TRUE}
+```{r commune2, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
 sp::plot(comoros::commune)
 ```
 
@@ -97,7 +112,7 @@ comoros::ppl
 
 The populated places dataset can be laid over the country borders as follows:
 
-```{r ppl2, echo = TRUE, eval = TRUE}
+```{r ppl2, echo = TRUE, eval = TRUE, fig.align = "center", fig.width = 10, fig.height = 10, fig.retina = 1}
 sp::plot(comoros::commune, lwd = 0.5, border = "gray50")
 sp::plot(comoros::prefecture, add = TRUE)
 sp::plot(comoros::country, lwd = 2, add = TRUE)
